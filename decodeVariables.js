@@ -1,3 +1,21 @@
+/*declare-javascript-variables*/
+//Declaración de vairables
+var myName;
+
+
+
+
+/****storing-values-with-the-assignment-operator*****/
+// Setup
+var a;
+
+// Only change code below this line
+
+a = 7;
+
+
+
+/*understanding-case-sensitivity-in-variables*/
 // Variable declarations
 //var StUdLyCapVaR;
 //var TitleCaseOver;
@@ -14,3 +32,6 @@ var titleCaseOver;
 studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000; 
+
+
+
