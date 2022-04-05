@@ -31,3 +31,39 @@ const myConcat = (arr1, arr2) =>{
   return arr1.concat(arr2);
 };
 console.log(myConcat([1, 2], [3, 4, 5]));
+
+/****************handle-a-fulfilled-promise-with-then*****************/
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to true to represent a successful response from a server
+  let responseFromServer = true;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+}).then(result=>{
+  console.log(result);
+});
+
+/*****************handle-a-rejected-promise-with-catch**********/
+
+const makeServerRequest = new Promise((resolve, reject) => {
+  // responseFromServer is set to false to represent an unsuccessful response from a server
+  let responseFromServer = false;
+    
+  if(responseFromServer) {
+    resolve("We got the data");
+  } else {  
+    reject("Data not received");
+  }
+});
+
+makeServerRequest.then(result => {
+  console.log(result);
+});
+
+makeServerRequest.catch(error =>{
+  console.log(error);
+});
