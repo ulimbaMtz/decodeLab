@@ -1,6 +1,19 @@
 /************* add-two-numbers-with-javascript ***/
 const sum = 10 + 0;
 
+/*******************subtract-one-number-from-another-with-javascript****************/
+//const difference = 45 - 0;
+const difference = 45 - 33;
+
+/***************multiply-two-numbers-with-javascript**********/
+//const product = 8 * 0;
+const product = 8 * 10;
+
+/*****************divide-one-decimal-by-another-with-javascript**********/
+//const quotient = 0.0 / 2.0; // Change this line
+const quotient = 4.4 / 2.0; // Change this line
+
+
 
 /******introducing-else-statements*********************/
 function testElse(val) {
