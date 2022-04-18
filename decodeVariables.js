@@ -3,15 +3,14 @@
 var myName;
 
 
-
-
-/****storing-values-with-the-assignment-operator*****/
+/**********assigning-the-value-of-one-variable-to-another******/
 // Setup
 var a;
+a = 7;
+var b;
 
 // Only change code below this line
-
-a = 7;
+b = a;
 
 
 
@@ -32,6 +31,19 @@ var titleCaseOver;
 studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000; 
+
+
+/****storing-values-with-the-assignment-operator*****/
+// Setup
+var a;
+
+// Only change code below this line
+
+a = 7;
+
+
+
+
 
 
 
