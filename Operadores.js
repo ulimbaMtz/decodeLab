@@ -102,3 +102,96 @@ function orderMyLogic(val) {
 orderMyLogic(7);
 
 
+/*************************golf-code (1)*********************************/
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+  // Only change code below this line
+  var ret= "";
+ if(strokes == 1){
+   ret = names[0];
+    }else if(strokes <= par - 2){
+      ret = names[1];
+    }else if(strokes == par -1){
+      ret = names[2];
+    }else if(strokes== par){
+ret = names[3];
+    }else if(strokes == par +1){
+      ret = names[4];
+    }else if(strokes == par + 2){
+ret  = names[5];
+    }else if(strokes >= par + 3){
+      ret = names[6];
+    }
+
+  return ret;
+  // Only change code above this line
+}
+
+golfScore(5, 4);
+
+
+
+/*********************counting-cards***************************/
+var count = 0;
+
+function cc(card) {
+  // Only change code below this line
+  
+   var ret="";
+  switch (card)
+  {
+   
+      case 2:
+      count++;
+        break;
+      case 3:
+      count++;
+        break;
+      case 4:
+      count++;
+        break;
+      case 5:
+      count++;
+        break;
+      case 6:
+       count++;
+        break;
+       case 7,8,9:     
+       count = count;
+        break;
+        case 10:
+         count--;
+         break;
+       case "J":
+       count--;
+        break; 
+       case "Q":
+       count--;
+        break; 
+       case "K":
+       count--;
+        break; 
+       case "A":
+         count--;
+        break; 
+  }
+
+ if(count > 0){
+  ret = count + " Bet";
+}else if(count <= 0){
+  ret = count + " Hold";
+}
+
+
+  return ret;
+  // Only change code above this line
+}
+
+cc(2); cc(3); cc(7); cc('K'); cc('A');
+
+
+
+
+
+
