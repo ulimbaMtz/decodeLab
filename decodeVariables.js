@@ -134,3 +134,13 @@ myOutfit();
 // Only change code below this line
 //const myArray = [];
 const myArray = ["Test1",1,"test2",2];
+
+/*******************build-javascript-objects (1)******************/
+const myDog = {
+  // Only change code below this line
+name: "Canelas",
+legs:4,
+tails: 1,
+friends: ["chalan","pilon"]
+  // Only change code above this line
+};
