@@ -69,6 +69,43 @@ function orderMyLogic(val) {
 
 orderMyLogic(7);
 
+/*****************comparison-with-the-inequality-operator**************/
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(10);
+
+/********************comparison-with-the-inequality-operator************************/
+// Setup
+function testNotEqual(val) {
+  if (val != 99) { // Change this line
+    return "Not Equal";
+  }
+  return "Equal";
+}
+
+testNotEqual(10);
+
+
+/**************comparison-with-the-greater-than-or-equal-to-operator****************/
+function testGreaterOrEqual(val) {
+  if (val>=20) {  // Change this line
+    return "20 or Over";
+  }
+
+  if (val>=10) {  // Change this line
+    return "10 or Over";
+  }
+
+  return "Less than 10";
+}
+
+testGreaterOrEqual(10);
 
 /*********************chaining-if-else-statements***************************/
 function testSize(num) {
