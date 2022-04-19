@@ -116,3 +116,26 @@ return newArray;
 
 const inputAnim = ["Cat", "Dog", "Tiger", "Zebra", "Ant"];
 sliceArray(inputAnim, 1, 3);
+
+
+/*****************************split-a-string-into-an-array-using-the-split-method*****************/
+function splitify(str) {
+  // Only change code below this line
+
+  return str.split(/[^A-Za-z]/);
+  // Only change code above this line
+}
+
+splitify("Hello World,I-am code");
+
+
+/********************************************combine-an-array-into-a-string-using-the-join-method (1)******************/
+
+function sentensify(str) {
+  // Only change code below this line
+const  arr = str.split(/[^A-Za-z]/);
+return arr.join(" ");
+  // Only change code above this line
+}
+
+sentensify("May-the-force-be-with-you");
