@@ -218,3 +218,16 @@ function checkEqual(a, b) {
 }
 
 checkEqual(1, 2);
+
+
+/*****************use-multiple-conditional-ternary-operators**********/
+function checkSign(num) {
+var ret="";
+    ret = (num > 0) ? "positive"
+    : (num < 0 ) ? "negative"
+    : "zero";
+
+    return ret;
+}
+
+checkSign(10);
