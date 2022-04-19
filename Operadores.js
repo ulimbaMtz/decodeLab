@@ -76,7 +76,7 @@ function testLogicalOr(val) {
 
 testLogicalOr(15);
 
-/**************comparisons-with-the-logical-or-operato*******/
+/**************Logical Order in If Else Statements*******/
 /*function orderMyLogic(val) {
   if (val < 10) {
     return "Less than 10";
