@@ -88,4 +88,45 @@ function countOnline(usersObj) {
 }
 
 console.log(countOnline(users));
+
+/****************************reverse-a-string (2)***************************/
+function reverseString(str) {
+  var strReverse ="";
+  for(let i=str.length-1; i >= 0; i--){
+      strReverse += str[i];
+  }
+  return strReverse;
+}
+
+reverseString("hello");
+
+
+/************************************find-the-longest-word-in-a-string (1)*********************/
+function findLongestWordLength(str) {
+  let cadMax = "";
+  let cadStr= str.split(' ');
+  cadMax = cadStr[0];
+  for(let i= 0; i < cadStr.length; i++){
+    if(cadStr[i].length > cadMax.length){
+      cadMax = cadStr[i]; 
+    }
+  }
+  return cadMax.length;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
   
+
+/*************************factorialize-a-number****************/
+
+function factorialize(num) {
+  var fact = 1;
+  if(num>=0){
+    for(let i=num; i>0; i--){
+        fact = fact * (i);
+    }
+  }
+  return fact;
+}
+
+factorialize(5);
