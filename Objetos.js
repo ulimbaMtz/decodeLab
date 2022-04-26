@@ -27,6 +27,15 @@ function Dog() {
 
 var hound = new Dog();
 
+/***************************extend-constructors-to-receive-arguments**********************/
+function Dog(name,color) {
+this.name = name;
+this.color= color;
+this.numLegs = 4;
+}
+
+var terrier = new Dog("bolillo","café");
+
 
 /****************accessing-object-properties-with-dot-notation********************/
 
