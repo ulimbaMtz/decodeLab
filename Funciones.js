@@ -3,6 +3,48 @@ function reusableFunction (){
   console.log("Hi World");
 }
 
+reusableFunction();
+
+/************************passing-values-to-functions-with-arguments*****************/
+function functionWithArgs(param1, param2){
+  var sumGen = param1 + param2;
+ console.log(sumGen);
+}
+
+functionWithArgs(5,7);
+
+/**************************understanding-undefined-value-returned-from-a-function*********************/
+// Setup
+let sum = 0;
+
+function addThree() {
+  sum = sum + 3;
+}
+
+// Only change code below this line
+function addFive(){
+  sum = sum + 5;
+}
+
+// Only change code above this line
+
+addThree();
+addFive();
+
+/*********************************returning-boolean-values-from-functions********************************/
+function isLess(a, b) {
+  // Only change code below this line
+  /*if (a < b) {
+    return true;
+  } else {
+    return false;
+  }*/
+  return a < b;
+  // Only change code above this line
+}
+
+isLess(10, 15);
+
 
 /***************find-the-longest-word-in-a-string*********************/
 
