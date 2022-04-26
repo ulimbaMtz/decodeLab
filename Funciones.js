@@ -95,6 +95,43 @@ function randomWholeNum() {
   return rand;
 }
 
+
+
+/***********************return-largest-numbers-in-arrays**************************/
+function largestOfFour(arr) {
+var arrGen= [];
+  for(let i = 0; i< arr.length; i++){
+    //for(let j= 0; j< arr[i].length; j++){
+      var arrGen1= arr[i];
+       arrGen.push(Math.max(...arrGen1));
+    //}
+  }
+  return arrGen;
+}
+
+largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+
+
+
+/**************************sum-all-numbers-in-a-range*******************/
+function sumAll(arr) {
+  var inicio = 0;
+  var fin = 0;
+  var sumaGen = 0;
+
+  inicio = Math.min(...arr);
+  fin = Math.max(...arr);
+  
+  for(let i = inicio; i<=fin; i++){
+    sumaGen= sumaGen+ i;
+  }
+  return sumaGen;
+}
+
+sumAll([1, 4]);
+
+
+
 /************************use-arrow-functions-to-write-concise-anonymous-functions*********/
 const magic = ()=> {
   const fechas = new Date();
@@ -106,6 +143,7 @@ const myConcat = (arr1, arr2) =>{
   return arr1.concat(arr2);
 };
 console.log(myConcat([1, 2], [3, 4, 5]));
+
 
 /****************handle-a-fulfilled-promise-with-then*****************/
 
