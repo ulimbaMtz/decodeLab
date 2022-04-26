@@ -10,6 +10,23 @@ friends: ["chalan","pilon"]
 };
 
 
+/******************define-a-constructor-function*******************/
+function Dog(){
+  this.name= "Chalan";
+  this.color ="Brown";
+  this.numLegs= 4;
+}
+
+/**********************use-a-constructor-to-create-objects*******************/
+function Dog() {
+  this.name = "Rupert";
+  this.color = "brown";
+  this.numLegs = 4;
+}
+// Only change code below this line
+
+var hound = new Dog();
+
 
 /****************accessing-object-properties-with-dot-notation********************/
 
@@ -23,6 +40,21 @@ const testObj = {
 // Only change code below this line
 const hatValue = testObj.hat;      // Change this line
 const shirtValue = testObj.shirt;    // Change this line
+
+
+/**************************make-code-more-reusable-with-the-this-keyword***********************/
+/*let = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + dog.numLegs + " legs.";}
+};*/
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
+
+dog.sayLegs();
 
 /****************************iterate-through-the-keys-of-an-object-with-a-for---in-statement*********/
 const users = {
