@@ -10,6 +10,32 @@ const lowercaseString = (string) => {
 export {uppercaseString, lowercaseString};
 
 
+/*****************************use-an-iife-to-create-a-module********************/
+/*let isCuteMixin = function(obj) {
+  obj.isCute = function() {
+    return true;
+  };
+};
+let singMixin = function(obj) {
+  obj.sing = function() {
+    console.log("Singing to an awesome tune");
+  };
+}; */
+let funModule = (function(){
+ return {isCuteMixin: function(obj) {
+  obj.isCute = function() {
+    return true;
+  };
+},
+ singMixin: function(obj) {
+  obj.sing = function() {
+    console.log("Singing to an awesome tune");
+  };
+}
+}})();
+
+
+
 /******************************reuse-javascript-code-using-import**************/
 import {uppercaseString, lowercaseString} from './string_functions.js';
 
