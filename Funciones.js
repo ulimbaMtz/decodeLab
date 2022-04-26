@@ -62,6 +62,39 @@ function findLongestWordLength(str) {
 
 findLongestWordLength("The quick brown fox jumped over the lazy dog");
 
+/**********************use-the-parseint-function (1)********************/
+
+function convertToInteger(str) {
+ return parseInt(str);
+}
+
+convertToInteger("56");
+
+
+/*************************generate-random-fractions-with-javascript**************/
+function randomFraction() {
+
+  // Only change code below this line
+  var rand = Math.random();
+  while(rand == 0){
+    rand = math.random();
+  }
+  return rand;
+
+  // Only change code above this line
+}
+
+/**********************generate-random-whole-numbers-with-javascript*****************/
+function randomWholeNum() {
+
+  // Only change code below this line
+  var rand = Math.floor( Math.random() * 10);
+  while(rand<0 & rand >9){
+    rand = Math.floor( Math.random() * 10);
+  }
+  return rand;
+}
+
 /************************use-arrow-functions-to-write-concise-anonymous-functions*********/
 const magic = ()=> {
   const fechas = new Date();
