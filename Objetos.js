@@ -235,6 +235,23 @@ console.log(JSON.stringify(ratings));
 
 
 
+/********************write-concise-declarative-functions-with-es6*********************/
+// Only change code below this line
+/*const bicycle = {
+  gear: 2,
+  setGear: function(newGear) {
+    this.gear = newGear;
+  }
+};*/
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+// Only change code above this line
+bicycle.setGear(3);
+console.log(bicycle.gear);
 
 
 /****************************iterate-through-the-keys-of-an-object-with-a-for---in-statement*********/
