@@ -346,4 +346,22 @@ const bob = new Person('Bob Ross');
 bob.getFullName();
 
 
-/*****************modificación de o
+/*****************modificación de objetos por referencia*****************/
+function Libro(nombre, costo) {
+    var detalles = {
+        "nombre": nombre,
+        "costo": costo
+    };
+    this.obtenDetalles = function () {     
+        return detalles;                 
+    };
+}
+
+var libraje = new Book("Invasión Silenciosa", "327");
+var detallesLibro = libraje.obtenDetalles();
+
+bookDetails.nombre = "Un fuego sobre el abismo";     // modifies private data 
+bookDetails.costo = "282";
+
+console.log(book.obtenDetalles().nombre);        // => Jane Austen
+console.log(book.obtenDetalles().costo);         // => 99.95
