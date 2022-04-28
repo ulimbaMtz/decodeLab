@@ -282,3 +282,30 @@ function countOnline(usersObj) {
 console.log(countOnline(users));
 
 
+/***************************map-the-debris***********************/
+function orbitalPeriod(arr) {
+  const GM = 398600.4418;
+  const earthRadius = 6367.4447;
+  const pay=Math.PI;
+  var arrORb= [];
+
+  for(let obj in arr){
+        var objOrbital ={
+        name: "",
+        orbitalPeriod: 0
+        }
+    var resultado = Math.round((2*pay) * (Math.sqrt(Math.pow((earthRadius + arr[obj].avgAlt) ,3) / GM )));
+
+    objOrbital.name= arr[obj].name;
+    objOrbital.orbitalPeriod= resultado;
+
+    arrORb.push(objOrbital);
+  }
+
+  
+  return arrORb;
+}
+
+orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
+}
+
