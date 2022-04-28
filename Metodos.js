@@ -296,4 +296,92 @@ const filteredList = watchList.filter(function(rating){
   });
 
 
-/*************************METODOS 
+/*************************METODOS AUXILIARES, DATE, TIME, NUMBERS, MATH ETC.*******************************/
+/*
+getFullYear()	Get the year as a four digit number (yyyy)
+getMonth()	Get the month as a number (0-11)
+getDate()	Get the day as a number (1-31)
+getHours()	Get the hour (0-23)
+getMinutes()	Get the minute (0-59)
+getSeconds()	Get the second (0-59)
+getMilliseconds()	Get the millisecond (0-999)
+getTime()	Get the time (milliseconds since January 1, 1970)
+getDay()	Get the weekday as a number (0-6)
+Date.now()	Get the time. ECMAScript 5.*/
+
+function reloj() {
+  
+    
+    var digital = new Date();
+    var hours = digital.getHours();
+    var minutes = digital.getMinutes();
+    var seconds = digital.getSeconds();
+    
+    var amOrPm = "a.m.";
+    
+    //if (hours > 11) amOrPm = "p.m.";
+    //if (hours > 12) hours = hours - 12;
+    //if (hours == 0) hours = 12;
+    if (minutes <= 9) minutes = "0" + minutes;
+    if (seconds <= 9) seconds = "0" + seconds;
+
+    dispTime = hours + ":" + minutes;  //+ ":" + seconds + " " + amOrPm;
+
+    var fecha = new Date();
+    var diames = fecha.getDate();
+    var diasemana = fecha.getDay();
+    var mes = fecha.getMonth() + 1;
+    var ano = fecha.getFullYear();
+
+    var textosemana = new Array(7);
+    textosemana[0] = "Domingo";
+    textosemana[1] = "Lunes";
+    textosemana[2] = "Martes";
+    textosemana[3] = "Miércoles";
+    textosemana[4] = "Jueves";
+    textosemana[5] = "Viernes";
+    textosemana[6] = "Sábado";
+
+    var textomes = new Array(12);
+    textomes[1] = "Enero";
+    textomes[2] = "Febrero";
+    textomes[3] = "Marzo";
+    textomes[4] = "Abril";
+    textomes[5] = "Mayo";
+    textomes[6] = "Junio";
+    textomes[7] = "Julio";
+    textomes[7] = "Agosto";
+    textomes[9] = "Septiembre";
+    textomes[10] = "Octubre";
+    textomes[11] = "Noviembre";
+    textomes[12] = "Diciembre";
+
+    var fecha = diames + ' ' + textomes[mes] + ' ' + ano + ' / ';  
+
+    return fecha + dispTime;
+}
+
+//SALIDA EJEMPLO
+//Jueves 28/Abril/2022	13:35:15 hrs.
+
+/************************NUMEROS******************************/
+Number.isInteger(1); //true
+Number.isInteger('1'); //false
+Number.isInteger(false); //false
+
+
+Number.isNaN(1); //false
+Number.isNaN('NaN'); //false
+Number.isNaN(NaN); //true
+Number.isNaN(0 / 0); //true
+
+var number = 1.23456789;
+console.log(number.toFixed(2));
+console.log(number.toFixed(3));
+console.log(number.toFixed(4));
+
+//1.23
+//1.235
+//1.2346
+
+
