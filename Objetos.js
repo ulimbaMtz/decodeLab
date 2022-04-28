@@ -360,8 +360,8 @@ function Libro(nombre, costo) {
 var libraje = new Book("Invasión Silenciosa", "327");
 var detallesLibro = libraje.obtenDetalles();
 
-bookDetails.nombre = "Un fuego sobre el abismo";     // modifies private data 
-bookDetails.costo = "282";
+detallesLibro.nombre = "Un fuego sobre el abismo";     
+detallesLibro.costo = "282";
 
-console.log(book.obtenDetalles().nombre);        // => Jane Austen
-console.log(book.obtenDetalles().costo);         // => 99.95
+console.log(libraje.obtenDetalles().nombre);        
+console.log(libraje.obtenDetalles().costo);         
