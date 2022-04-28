@@ -309,3 +309,41 @@ function orbitalPeriod(arr) {
 orbitalPeriod([{name : "sputnik", avgAlt : 35873.5553}]);
 }
 
+
+
+/**********************************make-a-person************************/
+const Person = function(firstAndLast) {
+  // Only change code below this line
+  // Complete the method below and implement the others similarly
+  var nombreComp = firstAndLast;
+
+  this.getFirstName = function() {
+    return nombreComp.split(' ')[0];
+  };
+
+  this.getLastName = function() {
+    return nombreComp.split(' ')[1];
+  };
+
+  this.getFullName = function() {
+    return nombreComp;
+  };
+
+  this.setFirstName = function(nombre) {
+    nombreComp = nombre + " " + nombreComp.split(" ")[1];
+  };
+
+  this.setLastName = function(nombre) {
+    nombreComp = nombreComp.split(" ")[0] + " " + nombre;
+  };
+
+  this.setFullName = function(nombre) {
+    nombreComp = nombre;
+  };
+};
+
+const bob = new Person('Bob Ross');
+bob.getFullName();
+
+
+/*****************modificación de o
